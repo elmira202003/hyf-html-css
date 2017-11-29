@@ -1,0 +1,41 @@
+hackyourfuture@hackyourfuture-LIFEBOOK-S761:~$ ls
+class13  Desktop  Documents  Downloads  examples.desktop  Music  Pictures  Public  Templates  Videos
+hackyourfuture@hackyourfuture-LIFEBOOK-S761:~$ cd class13
+hackyourfuture@hackyourfuture-LIFEBOOK-S761:~/class13$ cd week2
+hackyourfuture@hackyourfuture-LIFEBOOK-S761:~/class13/week2$ mkdir exercise
+hackyourfuture@hackyourfuture-LIFEBOOK-S761:~/class13/week2$ cd exercise
+hackyourfuture@hackyourfuture-LIFEBOOK-S761:~/class13/week2/exercise$ touch blank
+hackyourfuture@hackyourfuture-LIFEBOOK-S761:~/class13/week2/exercise$ ls
+blank
+hackyourfuture@hackyourfuture-LIFEBOOK-S761:~/class13/week2/exercise$ echo -e "Hello\nHello\nHello\nHello\nHello" > greetings.txt
+hackyourfuture@hackyourfuture-LIFEBOOK-S761:~/class13/week2/exercise$ cat greetings.txt
+Hello
+Hello
+Hello
+Hello
+Hello
+hackyourfuture@hackyourfuture-LIFEBOOK-S761:~/class13/week2/exercise$ cp greetings.txt 1.txt ; cp greetings.txt 2.txt ; cp greetings.txt 3.txt ; cp greetings.txt 4.txt ; cp greetings.txt 5.txt 
+hackyourfuture@hackyourfuture-LIFEBOOK-S761:~/class13/week2/exercise$ echo "cat" > pets.txt
+hackyourfuture@hackyourfuture-LIFEBOOK-S761:~/class13/week2/exercise$ echo "dog" >> pets.txt
+hackyourfuture@hackyourfuture-LIFEBOOK-S761:~/class13/week2/exercise$ echo "hamster" >> pets.txt
+hackyourfuture@hackyourfuture-LIFEBOOK-S761:~/class13/week2/exercise$ cat pets.txt
+cat
+dog
+hamster
+hackyourfuture@hackyourfuture-LIFEBOOK-S761:~/class13/week2/exercise$ echo "cat" > commands.txt
+hackyourfuture@hackyourfuture-LIFEBOOK-S761:~/class13/week2/exercise$ echo "ls" >> commands.txt
+hackyourfuture@hackyourfuture-LIFEBOOK-S761:~/class13/week2/exercise$ echo "pwd" >> commands.txt
+hackyourfuture@hackyourfuture-LIFEBOOK-S761:~/class13/week2/exercise$ cat commands.txt
+cat
+ls
+pwd
+hackyourfuture@hackyourfuture-LIFEBOOK-S761:~/class13/week2/exercise$ cat pets.txt > lovelyCommands.txt
+hackyourfuture@hackyourfuture-LIFEBOOK-S761:~/class13/week2/exercise$ cat commands.txt >> lovelyCommands.txt
+hackyourfuture@hackyourfuture-LIFEBOOK-S761:~/class13/week2/exercise$ sort lovelyCommands.txt | uniq
+cat
+dog
+hamster
+ls
+pwd
+hackyourfuture@hackyourfuture-LIFEBOOK-S761:~/class13/week2/exercise$ gnome-screenshot
+
