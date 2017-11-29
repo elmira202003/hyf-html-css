@@ -1,41 +1,39 @@
-hackyourfuture@hackyourfuture-LIFEBOOK-S761:~$ ls
-class13  Desktop  Documents  Downloads  examples.desktop  Music  Pictures  Public  Templates  Videos
-hackyourfuture@hackyourfuture-LIFEBOOK-S761:~$ cd class13
-hackyourfuture@hackyourfuture-LIFEBOOK-S761:~/class13$ cd week2
-hackyourfuture@hackyourfuture-LIFEBOOK-S761:~/class13/week2$ mkdir exercise
-hackyourfuture@hackyourfuture-LIFEBOOK-S761:~/class13/week2$ cd exercise
-hackyourfuture@hackyourfuture-LIFEBOOK-S761:~/class13/week2/exercise$ touch blank
-hackyourfuture@hackyourfuture-LIFEBOOK-S761:~/class13/week2/exercise$ ls
-blank
-hackyourfuture@hackyourfuture-LIFEBOOK-S761:~/class13/week2/exercise$ echo -e "Hello\nHello\nHello\nHello\nHello" > greetings.txt
-hackyourfuture@hackyourfuture-LIFEBOOK-S761:~/class13/week2/exercise$ cat greetings.txt
-Hello
-Hello
-Hello
-Hello
-Hello
-hackyourfuture@hackyourfuture-LIFEBOOK-S761:~/class13/week2/exercise$ cp greetings.txt 1.txt ; cp greetings.txt 2.txt ; cp greetings.txt 3.txt ; cp greetings.txt 4.txt ; cp greetings.txt 5.txt 
-hackyourfuture@hackyourfuture-LIFEBOOK-S761:~/class13/week2/exercise$ echo "cat" > pets.txt
-hackyourfuture@hackyourfuture-LIFEBOOK-S761:~/class13/week2/exercise$ echo "dog" >> pets.txt
-hackyourfuture@hackyourfuture-LIFEBOOK-S761:~/class13/week2/exercise$ echo "hamster" >> pets.txt
-hackyourfuture@hackyourfuture-LIFEBOOK-S761:~/class13/week2/exercise$ cat pets.txt
-cat
-dog
-hamster
-hackyourfuture@hackyourfuture-LIFEBOOK-S761:~/class13/week2/exercise$ echo "cat" > commands.txt
-hackyourfuture@hackyourfuture-LIFEBOOK-S761:~/class13/week2/exercise$ echo "ls" >> commands.txt
-hackyourfuture@hackyourfuture-LIFEBOOK-S761:~/class13/week2/exercise$ echo "pwd" >> commands.txt
-hackyourfuture@hackyourfuture-LIFEBOOK-S761:~/class13/week2/exercise$ cat commands.txt
-cat
-ls
-pwd
-hackyourfuture@hackyourfuture-LIFEBOOK-S761:~/class13/week2/exercise$ cat pets.txt > lovelyCommands.txt
-hackyourfuture@hackyourfuture-LIFEBOOK-S761:~/class13/week2/exercise$ cat commands.txt >> lovelyCommands.txt
-hackyourfuture@hackyourfuture-LIFEBOOK-S761:~/class13/week2/exercise$ sort lovelyCommands.txt | uniq
-cat
-dog
-hamster
-ls
-pwd
-hackyourfuture@hackyourfuture-LIFEBOOK-S761:~/class13/week2/exercise$ gnome-screenshot
+1.create a directory
+mkdir exercise
+
+2. enter the directory
+cd exercise
+
+3.create an empty file named blank
+touch blank
+
+4.write the content "Hello" 5 times to file greeting.txt
+echo -e "Hello\nHello\nHello\nHello\nHello" > greetings.txt
+
+5.copy file greeting.txt and paste contents into 1.txt , 2.txt , 3.txt , 4.txt , 5.txt.
+cp greetings.txt 1.txt ; cp greetings.txt 2.txt ; cp greetings.txt 3.txt ; cp greetings.txt 4.txt ; cp greetings.txt 5.txt 
+
+6.write the text "cat" to file pets.txt
+echo "cat" > pets.txt
+
+7.append text "dog" to pets.txt
+echo "dog" >> pets.txt
+
+8.append text"hamster" to pets.txt
+echo "hamster" >> pets.txt
+
+9.write text"cat" to commands.txt
+echo "cat" > commands.txt
+
+10.append text "ls" to command.txt
+echo "ls" >> commands.txt
+
+11.append text "pwd" to command.txt
+echo "pwd" >> commands.txt
+
+12.find unique strings of pets.txt and command.txt and store the unique string in lovelyCommand.txt
+cat pets.txt > lovelyCommands.txt
+cat commands.txt >> lovelyCommands.txt
+sort lovelyCommands.txt | uniq >> lovelyCommands.txt
+
 
