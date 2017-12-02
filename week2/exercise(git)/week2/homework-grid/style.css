@@ -1,0 +1,89 @@
+body { 
+    box-sizing:border-box;
+    backgorund-color: white;
+    margin: 0 auto;
+    }
+    main { text-align: center;
+           padding: 2px;
+        }
+    h1 { color:rgb(222, 222, 231);
+         font-family: sans-serif;
+         text-align:center;
+         text-shadow:3px 3px 3px rgb(52, 6, 95);
+         font-size:4em; 
+      }
+    h2 { color: rgb(185, 17, 31);
+         text-align:center;
+         clear:both;
+    }
+    h3 { color:rgb(112, 6, 252);
+         text-shadow: 1px 1px 1px rgb(53, 31, 114);
+      }
+    p {  text-align:justify;
+        margin:15px;
+        font-family: Verdana,Tahoma, sans-serif;
+     }
+    img { width:75%;
+         clear:both;
+       }
+        #grid-floats {width:90%; }
+        #grid-flex {width:90%;
+                    display:flex;
+                    flex-wrap:wrap;
+                    flex-direction:row;
+                    justify-content:flex-start;
+                    align-content:flex-start;
+                  }
+      #grid-flex .grid-item { margin: 1.20%;
+                              overflow: auto;
+                              border: 3px ridge rgb(101, 26, 145);
+                              border-radius:20px;
+                              height:500px;
+                              width:20%;
+                           }
+      #grid-floats .grid-item { margin: 1.20%;
+                                float: left;
+                                overflow: auto;
+                                border: 3px ridge rgb(101, 26, 145);
+                                border-radius:20px;
+                                height:500px;
+                                width:20%;
+                             }
+        .grid-item:hover {  background-color:rgb(64, 9, 116);
+                            color:white;
+                        }
+#grid-floats .grid-item:nth-child(1) { width:42.5%; 
+                                       font-size:1.25em;
+                                    }
+#grid-flex .grid-item:nth-child(1){ width:42.5%; 
+                                    font-size:1.25em;
+                                 }
+        @media screen and (max-width:850px) { 
+            #grid-floats .grid-item { width:41.25%;
+                                      margin:1.20%;
+                                  font-size:0.80em;
+                                   }
+            #grid-floats .grid-item:nth-child(1) { width:85.3%;}
+            #grid-flex .grid-item {  width:41.25%;
+                                     margin:1.20%;
+                                     font-size:0.80em;
+                                 }
+            #grid-flex .grid-item:nth-child(1) {  width:85.3%; }
+                                           }
+       @media screen and (min-width:851px) and (max-width:1200px) {
+        #grid-floats .grid-item { width:27.5%;
+                                  margin:1.20%;
+                               }
+        #grid-floats .grid-item:nth-child(-n+2) { width:42.8%; 
+                                                  font-size:1.25em;
+                                               }
+         #grid-flex .grid-item {  width:27.5%;
+                                  margin:1.20%;
+                              }
+         #grid-flex .grid-item:nth-child(-n+2) {  width:42.8%; 
+                                                  font-size:1.25em;
+                                              }
+                                                                 }
+        
+              
+   
