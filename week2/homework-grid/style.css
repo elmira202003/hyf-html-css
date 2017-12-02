@@ -37,7 +37,7 @@ body {
                   }
       #grid-flex .grid-item { margin: 1.20%;
                               overflow: auto;
-                              border: 3px ridge rgb(101, 26, 145);
+                              border: 4px ridge rgb(101, 26, 145);
                               border-radius:20px;
                               height:500px;
                               width:20%;
