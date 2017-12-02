@@ -27,7 +27,7 @@ body {
          clear:both;
          background-color: white;
        }
-        grid-floats {width:90%; }
+        #grid-floats {width:90%; }
         #grid-flex {width:90%;
                     display:flex;
                     flex-wrap:wrap;
