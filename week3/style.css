@@ -37,7 +37,7 @@ form {  position: absolute;
    button { padding:12px 20px;
             width: 20px;
             height: 40px;
-            background:transparent url(/photo/search.ico) no-repeat center; }
+            background:transparent url(photo/search.ico) no-repeat center; }
            
 .left-nav {  position: absolute;
              float:left;
