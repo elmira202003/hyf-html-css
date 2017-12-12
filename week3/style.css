@@ -1,0 +1,564 @@
+
+body {  margin:0 auto;
+        padding:0;
+        text-align: center;
+    }
+a {text-decoration:none;}
+#nav-1 { display:flex; 
+         background-color: rgb(33, 108, 151); 
+         height:75px;
+         flex-flow: row nowrap;
+         justify-content:space-between;
+         align-items: center;
+         padding:0 20px;
+      }
+#home-nav a , .main-nav a { color:white;
+                            font-family: sans-serif;
+                            font-size:1.2em;
+                            padding:15px;
+                         }
+.drop-button {display:none;}                        
+#home-nav a { font-size:1.5em;} 
+#src-leftnav-pic { position:absolute;
+                  width:100%;
+                }
+form {  position: absolute;
+        float: right;
+        z-index: 4;
+        margin:30px 50px;
+        top:5px;
+        right:20px;
+    } 
+    input {width: 200px; 
+          padding:12px 20px; 
+          }
+    #search-submit { padding:12px 20px;
+            width: 20px;
+            height: 40px;
+            background:transparent url(file:///home/hackyourfuture/class13/week3/photo/search.ico) no-repeat center; }
+           
+.left-nav {  position: absolute;
+             float:left;
+             width:30%;
+             margin:30px 50px;
+             top:5px;
+             background-color: white;
+             text-align: left;
+             line-height: 1.5em;
+             font-size: 1.2em;
+             min-width:300px;
+             z-index: 3;
+            
+         }
+ul {list-style-type:none;
+    font-family: cursive; }
+#wide-pic { float: right;
+            height:320px;
+            z-index:1;
+         }
+ #src-leftnav-pic .copyright {position:absolute;
+                             z-index: 2;
+                             top:270px;
+                            float:left;
+                             font-size:0.9em;
+                             color:white;
+                             padding:5px 20px;
+                            }
+.twelve {
+          position:absolute;
+          top:480px;
+          display:flex;
+          flex-flow: row wrap;
+          align-items: flex-start;
+          justify-content: space-between;
+          width: 98%;
+          height:550px;
+          background-color: rgba(243, 232, 232, 0.699);
+          padding:10px;
+        
+       }
+.navItem { width:22%;
+           padding: 10px;
+           text-align:left;
+           line-height:1.3em;
+           font-family: Verdana, Geneva, Tahoma, sans-serif;
+           
+        }
+.navItem h3:hover {text-decoration:underline; }
+.navItem h3 {color:rgb(79, 124, 190);
+             font-size:1.5em;}
+.navItem p {color:black;
+         
+         }
+.brickRow { 
+    position:absolute;
+    top:1050px;
+    display:flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 98%;
+    height:450px;
+    background-color: white;
+    padding:10px;
+  
+        }
+.brick { 
+    width:30%;
+    padding: 10px;
+    text-align:left;
+    line-height:1.3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+     }
+.brick h3 {color:rgba(7, 56, 112, 0.952);}
+.brick h3:hover {text-decoration:underline; }
+.brick img {  
+            width:95%;
+            text-align: center;
+            z-index:1;
+          }
+.brick a {z-index:2;}
+.brick a .copyright { position:absolute;
+                      z-index: 3;
+                      top:220px;
+                      float:left;
+                      font-size:0.9em;
+                      color:white;
+                      padding:5px 20px;
+                    }
+.brick-news { border-top: 1px solid rgba(128, 128, 128, 0.425);
+              position: absolute;
+              top:1510px;
+              display:flex;
+              height: 500px;
+              width:98%;
+              flex-flow: row wrap;
+              justify-content: space-between;
+              align-content: space-between;
+              font-family:Verdana, Geneva, Tahoma, sans-serif;
+              text-align:left;
+            }
+.brick-news h2 { width:95%;
+                 text-align: left;
+                 margin:10px;
+                }
+.brick a h3:hover {text-decoration:underline;}
+.brick .publDate { color:black;
+                   font-weight: bold;
+                   font-size:0.9em;
+                }
+.brick p {color:black;}
+.brick h3 {color:rgb(79, 124, 190);
+           font-size:1.5em;
+           line-height:1.5em;  
+          }
+#more {color:rgb(70, 110, 167); 
+       font-weight:bold;
+       padding-left:15px; 
+     }
+#more:hover {color:rgb(35, 54, 80);}
+.aside { position:absolute;
+         top:2220px;
+         display:flex;
+         flex-flow: row nowrap;
+         justify-content: flex-start;
+         align-items: flex-start;
+       }
+#left-aside , #right-aside {  width: 250px;
+                              height: 170px;
+                              padding:10px;
+                              border: 3px solid rgb(210, 210, 252);
+                              margin:25px;
+                          }
+#footer { position:absolute;
+          width:96%;
+          height:300px;
+          top:2500px;
+          display:flex;
+          flex-flow:row nowrap;
+          justify-content: space-between;
+          align-items: flex-start;
+          background-color: rgb(33, 108, 151);
+          padding:15px;
+          color:whitesmoke;
+          font-size: 1.2em;
+          text-align:left;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+       }   
+.payoff {font-size:1.2em;
+         padding-top:25px;
+        }
+.column ul li a { color:whitesmoke;
+                  text-align: left;
+                  padding-right:30px;
+               }  
+#languages ul { position: absolute;
+    top:2830px;
+    display:flex;
+    height: 50px;
+    width:98%;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align:center;
+    padding:25px;
+    margin:20px;
+}
+#languages ul li a {  border:1px solid rgb(202, 202, 248);
+    padding:10px;
+    margin:10px;
+    color:rgb(33, 108, 151);
+}
+
+
+
+@media screen and (max-width:415px) {  
+        
+        #nav-bar { display:flex; 
+             background-color: rgb(33, 108, 151); 
+             height:150px;
+             padding:0 20px;
+             flex-flow: row wrap;
+             justify-content:space-around;
+             align-content: flex-start;
+             z-index: 9999;
+                }
+        #search-form {
+                      width:90%;
+                      align-self: flex-end;}
+        #home-nav {align-self: flex-start;}
+        .main-nav {display: none;}
+        .left-nav {  position: absolute;
+                     float:left;
+                     width:80%;
+                     margin:30px 10px;
+                     top:120px;
+                     background-color: white;
+                     text-align: left;
+                     line-height: 1.5em;
+                     font-size: 1.2em;
+                     min-width:300px;
+                     z-index: 3;
+                    
+        }
+        
+
+#wide-pic { position:relative;
+            top:160px;
+            float:right;
+            padding:10px;
+            text-align: left;
+            height:350px;
+           width:95%;
+           z-index:1;
+        
+}
+        .twelve {
+            position:absolute;
+            top:610px;
+            display:flex;
+            flex-flow: row wrap;
+            align-content: space-between;
+            justify-content: flex-start;
+            width: 98%;
+            height:1900px;
+            background-color: rgba(243, 232, 232, 0.699);
+            padding:10px;
+          
+         }
+  .navItem { width:96%;
+             padding: 10px;
+             text-align:left;
+             line-height:1.3em;
+             font-family: Verdana, Geneva, Tahoma, sans-serif;
+        
+          }
+          .brickRow { 
+            position:absolute;
+            top:2570px;
+            display:flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            align-content:space-between ;
+            width: 98%;
+            height:1300px;
+            background-color: white;
+            padding:10px;
+          
+                }
+        .brick { 
+            width:95%;
+            padding: 10px;
+            text-align:left;
+            line-height:1.3em;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+             }
+
+             .brick-news { border-top: 1px solid rgba(128, 128, 128, 0.425);
+                position: absolute;
+                top:3880px;
+                display:flex;
+                height: 1500px;
+                width:98%;
+                flex-flow: row wrap;
+                justify-content: flex-start;
+                align-content: space-between;
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                text-align:left;
+              }
+.aside { position:absolute;
+    top:5580px;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: space-between;
+  }
+#left-aside , #right-aside {  width: 300px;
+                         height: 170px;
+                         padding:10px;
+                         border: 3px solid rgb(210, 210, 252);
+                         margin:25px;
+                     }
+                     #footer { position:absolute;
+                        width:96%;
+                        height:390px;
+                        top:6070px;
+                        display:flex;
+                        flex-flow:row wrap;
+                        justify-content: space-around;
+                        align-items: flex-start;
+                        background-color: rgb(33, 108, 151);
+                        padding:10px;
+                        color:whitesmoke;
+                        font-size: 1em;
+                        text-align:left;
+                        font-family: Verdana, Geneva, Tahoma, sans-serif;
+                     }  
+                     .payoff {width:90%;} 
+                     .column {width: 40%;}  
+                     #languages ul { position: absolute;
+                        top:6460px;
+                        display:flex;
+                        height: 100px;
+                        width:98%;
+                        flex-flow: row wrap;
+                        justify-content: space-between;
+                        align-content: space-around;
+                        font-family:Verdana, Geneva, Tahoma, sans-serif;
+                        text-align:center;
+                        padding:25px;
+                        margin:20px;
+                        font-size: 0.8em;
+                    }
+                   
+}
+@media screen and (min-width:416px) and (max-width:830px) {  
+    
+    #nav-bar { display:flex; 
+         background-color: rgb(33, 108, 151); 
+         height:150px;
+         padding:0 20px;
+         flex-flow: row wrap;
+         justify-content:space-around;
+         align-content: flex-start;
+         z-index: 9999;
+            }
+    #search-form {
+                  width:90%;
+                  align-self: flex-end;}
+    #home-nav {align-self: flex-start;}
+    .main-nav {display: none;}
+    .left-nav {  position: absolute;
+                 float:left;
+                 width:80%;
+                 margin:30px 10px;
+                 top:120px;
+                 background-color: white;
+                 text-align: left;
+                 line-height: 1.5em;
+                 font-size: 1.2em;
+                 min-width:300px;
+                 z-index: 3;
+                
+    }
+    
+
+#wide-pic { position:relative;
+        top:160px;
+        float:right;
+        padding:10px;
+        text-align: left;
+        height:350px;
+       width:95%;
+       z-index:1;
+    
+}
+    .twelve {
+        position:absolute;
+        top:610px;
+        display:flex;
+        flex-flow: row wrap;
+        align-content: space-between;
+        justify-content: flex-start;
+        width: 98%;
+        height:1900px;
+        background-color: rgba(243, 232, 232, 0.699);
+        padding:10px;
+      
+     }
+.navItem { width:96%;
+         padding: 10px;
+         text-align:left;
+         line-height:1.3em;
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+      }
+      .brickRow { 
+        position:absolute;
+        top:2570px;
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-content:space-between ;
+        width: 98%;
+        height:700px;
+        background-color: white;
+        padding:10px;
+      
+            }
+    .brick { 
+        width:45%;
+        padding: 10px;
+        text-align:left;
+        line-height:1.3em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+         }
+
+
+         .brick-news { border-top: 1px solid rgba(128, 128, 128, 0.425);
+            position: absolute;
+            top:3300px;
+            display:flex;
+            height: 1100px;
+            width:98%;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            align-content: space-between;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            text-align:left;
+          }
+          .brick-news .brick {width: 40%;}
+          .aside { position:absolute;
+            top:4570px;
+          }
+
+                 #footer { position:absolute;
+                    width:96%;
+                    height:390px;
+                    top:4850px;
+                    display:flex;
+                    flex-flow:row wrap;
+                    justify-content: space-around;
+                    align-items: flex-start;
+                    background-color: rgb(33, 108, 151);
+                    padding:10px;
+                    color:whitesmoke;
+                    font-size: 1em;
+                    text-align:left;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                 }  
+                 .payoff {width:90%;} 
+                 .column {width: 40%;}  
+                 #languages ul { position: absolute;
+                    top:5230px;
+                    display:flex;
+                    height: 100px;
+                    width:98%;
+                    flex-flow: row wrap;
+                    justify-content: space-between;
+                    align-content: space-around;
+                    font-family:Verdana, Geneva, Tahoma, sans-serf;
+                    text-align:center;
+                    padding:25px;
+                    margin:20px;
+                    font-size: 0.8em;
+                }
+               
+}
+@media screen and (min-width:831px) and (max-width:1250px) {  
+    
+   
+    .twelve {
+        position:absolute;
+        top:480px;
+                display:flex;
+        flex-flow: row wrap;
+        align-content: space-between;
+        justify-content: flex-start;
+        width: 98%;
+        height:880px;
+        background-color: rgba(243, 232, 232, 0.699);
+        padding:10px;
+    
+     }
+.navItem { width:45%;
+         padding: 10px;
+         text-align:left;
+         line-height:1.3em;
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+      }
+      .brickRow { 
+        position:absolute;
+        top:1400px;
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-content:space-between ;
+        width: 98%;
+        height:700px;
+        background-color: white;
+        padding:10px;
+      
+            }
+    .brick { 
+        width:45%;
+        padding: 10px;
+        text-align:left;
+        line-height:1.3em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+         }
+
+
+         .brick-news { border-top: 1px solid rgba(128, 128, 128, 0.425);
+            position: absolute;
+            top:2230px;
+            display:flex;
+            height: 1000px;
+            width:98%;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            align-content: space-between;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            text-align:left;
+          }
+          .brick-news .brick {width: 44%;}
+          .aside { position:absolute;
+            top:3270px;
+          }
+
+                 #footer { position:absolute;
+                   
+                    top:3520px;
+                   
+                 }  
+                
+            
+                 #languages ul { position: absolute;
+                    top:3810px;
+                   
+                }
+               
+}
